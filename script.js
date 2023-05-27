@@ -64,12 +64,15 @@ const WordCounter= (str) =>{
 
 btn.addEventListener('click',function(){
     if(this.innerText=='Start'){
+        mywords.value="";
         typedWords.disabled = false;
         playGame();
     }
     else if(this.innerText=="Done"){
         btn.innerText = "Start";
+        typedWords.disabled = true;
         endPlay();
+
     }
 
 })
