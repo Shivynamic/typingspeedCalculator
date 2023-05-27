@@ -31,7 +31,7 @@ const endPlay =()=>{
 
     let speed = Math.round((wordCount/ totalTime) * 60);
 
-    let finalMsg = " You typed total at " +speed+" words per minutes  with  accuracy.";
+    let finalMsg = " You typed total at speed " +speed+" wpm  with  accuracy.";
 
     finalMsg += compareWords(msg.innerText,totalStr);
     msg.innerText = finalMsg;
